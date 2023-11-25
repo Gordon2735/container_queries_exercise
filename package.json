@@ -1,0 +1,26 @@
+{
+	"name": "container_queries_exercise",
+	"version": "1.0.1",
+	"description": "Exercise Sandbox for learning CSS Container Queries",
+	"main": "./dist/src/ts/index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node nodemon",
+		"start": "npm run live",
+		"live": "live-server --browser=CHROME --open=public/views/index.html"
+	},
+	"author": "Gordon R Mullen Jr <webelistics@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^3.0.1",
+		"typescript": "^5.3.2"
+	},
+	"dependencies": {
+		"@types/styled-components": "^5.1.32",
+		"styled-components": "^6.1.1",
+		"stylis": "^4.3.0"
+	},
+	"resolutions": {
+		"styled-components": "^5"
+	}
+}
