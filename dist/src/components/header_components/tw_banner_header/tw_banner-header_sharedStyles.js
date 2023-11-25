@@ -25,6 +25,7 @@ twBannerHeader_sharedStyles.banner = /*css*/ `
     }
 
     .header {
+        margin: 5em auto 3em auto;
 		text-align: center;
     }
 
@@ -34,7 +35,7 @@ twBannerHeader_sharedStyles.banner = /*css*/ `
     }
 
     .tw_banner-header_shell {
-        margin: 2em auto 7em auto;
+        margin: 5em auto 7em auto;
     }
 
     .header-figure {

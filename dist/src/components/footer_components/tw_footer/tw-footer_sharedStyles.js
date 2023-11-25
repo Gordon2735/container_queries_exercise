@@ -18,7 +18,7 @@ twFooter_sharedStyles.shell = /*css*/ `
 twFooter_sharedStyles.footer = /*css*/ `
 
 	.footer {
-		margin: 15% auto 0.1em auto;
+		margin: 12% auto 0.1em auto;
 		text-align: center;
 	}
 
