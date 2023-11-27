@@ -19,7 +19,6 @@ export class TwBannerHeaderShell extends TwBannerHeaderTemplate {
 	}
 	constructor() {
 		super();
-
 		this.activateShadowDOM = true;
 
 		const head: HTMLHeadElement | null = document.querySelector('head');

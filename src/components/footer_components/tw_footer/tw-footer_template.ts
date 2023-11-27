@@ -11,7 +11,6 @@ export class TwFooterTemplate extends HTMLElement {
 	public get template(): string {
 		return this.template;
 	}
-
 	connectedCallback(): void {
 		if (this.activateShadowDOM === true)
 			this.attachShadow({ mode: 'open' });

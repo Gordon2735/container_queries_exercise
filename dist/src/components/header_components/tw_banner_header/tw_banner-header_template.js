@@ -1,7 +1,4 @@
 'use strict';
-// import { ITwBannerHeader } from '../../../interfaces/componentsInterfaces/componentsInterfaces.js';
-// import { IsetAttributes } from '../../../interfaces/componentsInterfaces/componentsInterfaces.js';
-// const settingAttributes: ITwBannerHeader =
 export class TwBannerHeaderTemplate extends HTMLElement {
     constructor() {
         super(...arguments);

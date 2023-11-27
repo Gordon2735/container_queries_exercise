@@ -7,6 +7,7 @@ import {
 
 const head = document.querySelector('head');
 const tw_banner_shellScript = document.createElement('script');
+const sandbox_bannerScript = document.createElement('script');
 const tw_footerScript = document.createElement('script');
 
 setAttributes(tw_banner_shellScript, {
@@ -16,6 +17,13 @@ setAttributes(tw_banner_shellScript, {
 	alt: 'tw_banner_header_shell component script file'
 });
 
+setAttributes(sandbox_bannerScript, {
+	type: 'module',
+	content: 'text/javascript',
+	src: '../../dist/src/components/sandbox_components/sandbox_banner/sandbox-banner_shell.js',
+	alt: 'sandbox-banner_shell component script file'
+});
+
 setAttributes(tw_footerScript, {
 	type: 'module',
 	content: 'text/javascript',
@@ -23,4 +31,8 @@ setAttributes(tw_footerScript, {
 	alt: 'tw_footer_shell component script file'
 });
 
-appendChildren(head, [tw_banner_shellScript, tw_footerScript]);
+appendChildren(head, [
+	tw_banner_shellScript,
+	sandbox_bannerScript,
+	tw_footerScript
+]);

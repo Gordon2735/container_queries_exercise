@@ -23,8 +23,16 @@ twFooter_sharedStyles.shell = /*css*/ `
 
 twFooter_sharedStyles.footer = /*css*/ `
 
+	body {
+		display: grid;
+		grid-template-areas: ". col1 ."
+			"col2 col2 col2"
+			". col3 .";
+	}
+
 	.footer {
-		margin: 12% auto 0.1em auto;
+		margin: 0em auto 5% auto;
+		justify-self: last baseline;
 		text-align: center;
 	}
 
