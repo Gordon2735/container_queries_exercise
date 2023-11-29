@@ -25,14 +25,17 @@ twFooter_sharedStyles.footer = /*css*/ `
 	}
 
 	.footer {
-		margin: 0em auto 5% auto;
+		container-name: footer_container;
+		container-type: inline-size;
+		margin: 0em auto 0em auto;
 		justify-self: last baseline;
 		text-align: center;
 	}
 
 	.footer-paragraph {
+		margin-top: calc(0.01% + 6.9vw); 
 		font-family: 'Black Ops One', sans-serif;
-		font-size: 0.9em;
+		font-size: 2vw;
 		font-weight: 400;
 		color: hsla(188, 53%, 80%, 0.998);
 		text-shadow: 0.1em 0.1em 0.4em hsla(0, 0%, 0%, 0.893)00;
@@ -50,11 +53,33 @@ twFooter_sharedStyles.footer = /*css*/ `
 	}
 
 	.footer-reg {
-		font-size: 0.8em;
+		font-size: 0.8em; 
 	}
 
 	.footer-LLC {
 		font-size: 0.5em;
+	}
+
+	@media screen and (max-width: 1760px) {
+		.footer-paragraph {
+			margin-top: 7%; 
+		}
+	}
+	@media screen and (max-width: 1500px) {
+		.footer-paragraph {
+			margin-top: 12%; 
+		}
+	}
+	@media screen and (max-width: 1350px) {
+		.footer-paragraph {
+			margin-top: 12%; 
+		}
+	}
+
+	@container footer_container (max-width: 1000px)  {
+		.footer-paragraph {
+			margin-top: calc(23% + 3.7vw); 
+		}
 	}
 
 	@keyframes fade-color {

@@ -21,17 +21,23 @@ twBannerHeader_sharedStyles.banner = /*css*/ `
     }
 
     .tw_banner-header_shell {
-      margin: 5em auto 7em auto;
+      margin: 1.5em auto 0em auto;
         grid-area: col1;
     }
 
     .header {
-        margin: 5em auto 3em auto;
-		text-align: center;
+        margin: 0em auto 0em auto;
+		    text-align: center;
+        container-name: header_container;
+        container-type: inline-size;
     }
 
     .header-figure {
-      margin: 0.1em auto 3em auto;
+      margin: 1.8em auto 0.5em auto;
+    }
+
+    .figure-image {
+      width: 740px;
     }
 
     .fig-caption {
@@ -49,6 +55,17 @@ twBannerHeader_sharedStyles.banner = /*css*/ `
       animation: fade-in 2s linear;
     }
 
+    @container header_container (max-width: 1000px) {
+      .header-figure {
+        margin: 6.1em auto 4em auto;
+      }
+      .query-fig-section {
+        margin: 5.5em auto 4em auto;
+    }
+      .figure-image {
+        width: 440px;
+      }
+    }
 
     @keyframes fade-in {
       0%,100% { opacity: 0 }
